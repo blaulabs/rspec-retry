@@ -45,9 +45,5 @@ describe RSpec::Retry do
         count.should == 2
       end
     end
-
-    it 'should success randomly', :retry => 3 do
-      rand(3).should == 1
-    end
   end
 end
